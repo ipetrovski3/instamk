@@ -4,13 +4,13 @@
     <title>Instamk</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body class="bg-gray-300">
-    <%= yield %>
+    <div class="lg:container lg:mx-auto">
+      <%= yield %>
+    </div>
   </body>
 </html>
