@@ -1,0 +1,16 @@
+
+  <div class="max-w-l rounded h-50 w-50 overflow-hidden shadow-lg bg-white mt-5 mb-5">
+    <%= link_to photo_path(photo) do %>
+      <%= image_tag photo.image, class:"w-full" %>
+      <div class="px-6 py-4">
+        <p class="text-black-100 text-base">
+          <%= photo.description %>
+        </p>
+      </div>
+    <% end %>
+    <div class="px-6 pt-4 pb-2">
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Like</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Leave comment</span>
+    </div>
+  </div>
+
