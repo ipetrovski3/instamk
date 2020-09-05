@@ -1,8 +1,7 @@
 <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-  <p class="inline-block">
-    <%= image_tag (@photo.user.profile_picture), class:"rounded-full w-10 h-10 float-left" %>
-    <span>  <%= @photo.user.username %></span>
-  </p>
+  <div class="inline-block p-1">
+      <span class="mr-1"><%= image_tag (@photo.user.profile_picture), class:"rounded-full w-6 h-6 float-left mr-2" %> <%= @photo.user.username %></span>
+  </div>
   <%= image_tag @photo.image, class:"w-full" %>
   <div class="px-6 py-4">
     <p class="text-black-100 text-base">
