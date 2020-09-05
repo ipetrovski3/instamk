@@ -11,7 +11,7 @@ class Photo < ApplicationRecord
   after_commit :create_hash_tags, on: :create
 
   def find_hash_tags
-    description.to_s.scan(/#\w+/).map{ |hash| hash.gsub('#', '')}
+    description.to_s.scan(/#\w+/).map { |hash| hash.gsub('#', '') }
   end
 
   def create_hash_tags
